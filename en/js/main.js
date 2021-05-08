@@ -313,3 +313,4 @@ window.addEventListener('load', () => {
 
     registerSW();
 })
+reset_storage()
