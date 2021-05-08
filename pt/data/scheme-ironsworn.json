@@ -1,0 +1,38 @@
+{
+    "settings" : {
+        "logo_dir" : "data/ironlog.png",
+        "iron_oracle" : true
+    },
+    "acao_e_tema" : {
+        "text" :  "Action and Theme",
+        "color" : "secondary",
+        "column" : 1,
+        "buttons" : {           
+            "button_1" : {
+                "text" : "Action",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Ação", "table" : "acao", "repeat" : 1}]
+            },
+            "button_2" : {
+                "text" : "Theme",        
+                "icon" : "fas fa-question fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Tema", "table" : "tema", "repeat" : 1}]
+            },
+            "button_3" : {
+                "text" : "Action and Theme",
+                "icon" : "fas fa-ticket-alt fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Ação", "table" : "acao", "repeat" : 1},
+                    {"text" : "Tema", "table" : "tema", "repeat" : 1}]
+            }
+        }
+    }
+}
