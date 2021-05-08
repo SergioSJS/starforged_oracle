@@ -1,4 +1,6 @@
 $('#ModalLog').modal({show:false})
+table_data_str = "table_data_en"
+scheme_data_str = "scheme_data_en"
 
 function findBootstrapEnvironment() {
     let envs = ['xs', 'sm', 'md', 'lg', 'xl'];
@@ -288,23 +290,23 @@ async function registerSW() {
 
 window.addEventListener('load', () => {
     readTextFile("./data/ironsworn.json", function(text){
-        if (localStorage.getItem("table_data") === null) {
+        if (localStorage.getItem(table_data_str) === null) {
             table_data = JSON.parse(text);
-            localStorage.setItem('table_data', JSON.stringify(table_data));
+            localStorage.setItem(table_data_str, JSON.stringify(table_data));
         }
         else{
-            table_data = JSON.parse(localStorage.getItem("table_data"));
+            table_data = JSON.parse(localStorage.getItem(table_data_str));
         }
     });
 
     // Load scheme and 
     readTextFile("./data/scheme-ironsworn.json", function(text){
-        if (localStorage.getItem("scheme_data") === null) {
+        if (localStorage.getItem(scheme_data_str) === null) {
             scheme_data = JSON.parse(text);
-            localStorage.setItem('scheme_data', JSON.stringify(scheme_data));
+            localStorage.setItem(scheme_data_str, JSON.stringify(scheme_data));
         }
         else{
-            scheme_data = JSON.parse(localStorage.getItem("scheme_data"));
+            scheme_data = JSON.parse(localStorage.getItem(scheme_data_str));
         }
         create_panel(scheme_data);
     }); 

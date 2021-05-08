@@ -1,4 +1,6 @@
 $('#ModalLog').modal({show:false})
+table_data_str = "table_data_pt"
+scheme_data_str = "scheme_data_pt"
 
 function findBootstrapEnvironment() {
     let envs = ['xs', 'sm', 'md', 'lg', 'xl'];
@@ -215,27 +217,27 @@ function table_choose_recursive(field) {
 
 function add_delete(){
     var str = "<div class='border border-danger p-1 mb-1 rounded'> \
-        <label class='badge badge-pill badge-danger'>Limpar log</label> \
+        <label class='badge badge-pill badge-danger'>Clear log</label> \
         <button type='button' class='btn btn-danger btn-block btn-sm' onclick='clear_log()'> \
-            <i class='fas fa-trash fa-lg' aria-hidden='true'></i> Limpar</button> \
+            <i class='fas fa-trash fa-lg' aria-hidden='true'></i> Clear</button> \
         </div>"
 
     document.getElementById('col2').innerHTML += str
 }
 function add_iron_oracle(){
     var str = " <div> \
-            <h5><label class='badge badge-pill badge-dark'>Pergunte ao Oráculo</label></h5>\
+            <h5><label class='badge badge-pill badge-dark'>Ask the Oracle</label></h5>\
         </div>\
-        <button type='button' class='btn btn-dark btn-sm' onclick='orac(11, `Quase Certo`)'>\
-            <i class='fas fa-thermometer-full fa-lg' aria-hidden='true'></i> Quase Certo</button>\
-        <button type='button' class='btn btn-dark btn-sm' onclick='orac(26, `Provável`)'>\
-            <i class='fas fa-thermometer-three-quarters fa-lg' aria-hidden='true'></i> Provável</button>\
+        <button type='button' class='btn btn-dark btn-sm' onclick='orac(11, `Almost Certain`)'>\
+            <i class='fas fa-thermometer-full fa-lg' aria-hidden='true'></i> Almost Certain</button>\
+        <button type='button' class='btn btn-dark btn-sm' onclick='orac(26, `Likely`)'>\
+            <i class='fas fa-thermometer-three-quarters fa-lg' aria-hidden='true'></i> Likely</button>\
         <button type='button' class='btn btn-dark btn-sm' onclick='orac(51, `50/50`)'>\
             <i class='fas fa-thermometer-half fa-lg' aria-hidden='true'></i> 50/50</button>\
-        <button type='button' class='btn btn-dark btn-sm' onclick='orac(76, `Improvável`)'>\
-            <i class='fas fa-thermometer-quarter fa-lg' aria-hidden='true'></i> Improvável</button>\
-        <button type='button' class='btn btn-dark btn-sm' onclick='orac(91, `Pequena Chance`)'>\
-            <i class='fas fa-thermometer-empty fa-lg' aria-hidden='true'></i> Pequena Chance</button>"
+        <button type='button' class='btn btn-dark btn-sm' onclick='orac(76, `Unlikely`)'>\
+            <i class='fas fa-thermometer-quarter fa-lg' aria-hidden='true'></i> Unlikely</button>\
+        <button type='button' class='btn btn-dark btn-sm' onclick='orac(91, `Small Chance`)'>\
+            <i class='fas fa-thermometer-empty fa-lg' aria-hidden='true'></i> Small Chance</button>"
     document.getElementById('iron_oracle').innerHTML += str
 }
 function add_logo(img_dir){
@@ -250,11 +252,11 @@ function orac(perc, desc){
     console.log('entrou')
     var d100 = rand_int(100) +1
     if (d100 >= perc){
-        var res = 'SIM'
+        var res = 'YES'
         insert_data('<div class="border border-success p-1 mb-1 mt-2 rounded">'
                 +'<strong>{0} -></strong> {1} -> {2}</div>'.format(desc, d100, res));
     }else{
-        var res = 'NÃO'
+        var res = 'NO'
         insert_data('<div class="border border-danger p-1 mb-1 mt-2 rounded">'
                 +'<strong>{0} -></strong> {1} -> {2}</div>'.format(desc, d100, res));
     }
@@ -288,23 +290,23 @@ async function registerSW() {
 
 window.addEventListener('load', () => {
     readTextFile("./data/ironsworn.json", function(text){
-        if (localStorage.getItem("table_data") === null) {
+        if (localStorage.getItem(table_data_str) === null) {
             table_data = JSON.parse(text);
-            localStorage.setItem('table_data', JSON.stringify(table_data));
+            localStorage.setItem(table_data_str, JSON.stringify(table_data));
         }
         else{
-            table_data = JSON.parse(localStorage.getItem("table_data"));
+            table_data = JSON.parse(localStorage.getItem(table_data_str));
         }
     });
 
     // Load scheme and 
     readTextFile("./data/scheme-ironsworn.json", function(text){
-        if (localStorage.getItem("scheme_data") === null) {
+        if (localStorage.getItem(scheme_data_str) === null) {
             scheme_data = JSON.parse(text);
-            localStorage.setItem('scheme_data', JSON.stringify(scheme_data));
+            localStorage.setItem(scheme_data_str, JSON.stringify(scheme_data));
         }
         else{
-            scheme_data = JSON.parse(localStorage.getItem("scheme_data"));
+            scheme_data = JSON.parse(localStorage.getItem(scheme_data_str));
         }
         create_panel(scheme_data);
     }); 
