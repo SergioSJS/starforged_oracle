@@ -178,7 +178,7 @@ function table_choose(field) {
         if (use_select){
             var sel = document.getElementById(use_select);
             var sel_value = sel.options[sel.selectedIndex].value;
-            name_table = name_table+'_'+sel_value
+            name_table = name_table+' '+sel_value
         }
 
         var repeat_table = tb['repeat']; // how many random values
@@ -196,7 +196,7 @@ function table_choose(field) {
                 if (table_text.indexOf('##') == 0){
                     table_text = table_choose_recursive(table_text.substr(2))
                 }
-                str_temp += '({0}) {1}'.format(idx+1, table_text);
+                str_temp += '({0}) "{1}"'.format(idx+1, table_text);
                 // if has more repeat, add ,
                 if (i+1 < repeat_table){
                     str_temp += ', ';
@@ -209,8 +209,16 @@ function table_choose(field) {
                     // if special characteres for relationship between tables
                     if (table_text.indexOf('##') == 0){
                         table_text = table_choose_recursive(table_text.substr(2))
+                        str_temp +=  '({0}) {1}<br/>'.format((idx+1).toString(), table_text);
                     }
-                    str_temp +=  '({0}) {1}<br/>'.format(idx+1, table_text);                    
+                    else if (typeof(table_text) == 'object'){
+                        table_text = table_choose_recursive(table_text)
+                        str_temp +=  '({0}) {1}<br/>'.format((idx+1).toString(), table_text);
+                    }
+                    else{
+                        str_temp += '<i>({0})</i>({1}) "{2}"<br/>'.format(table_text, (idx+1).toString(), table_text);
+                    }
+                    
                 }
                 // if has more repeat, add ,
                 if (i+1 < repeat_table){
@@ -231,13 +239,32 @@ function table_choose(field) {
 }
 
 function table_choose_recursive(field) {
-    var rec_data = table_data[field];
-    var idx = rand_int(rec_data)
-    var temp_str = rec_data[idx];
-    if (temp_str.indexOf('##') == 0){
-        temp_str = table_choose_recursive(field.substr(2));
+
+    if (typeof(field) == 'string'){
+        var rec_data = table_data[field];
+        var idx = rand_int(rec_data)
+        var temp_str = rec_data[idx];
+        if (temp_str.indexOf('##') == 0){
+            temp_str = table_choose_recursive(temp_str.substr(2));
+        }
+        return '<i>({0})</i>({1}) "{2}"'.format(field, (idx+1).toString(), temp_str);
     }
-    return '({0})({1}) {2}'.format(field, idx, temp_str);
+    else{
+        var name_table = field[0].substr(2)
+        var use_select = field[1]
+        var sel = document.getElementById(use_select);
+        var sel_value = sel.options[sel.selectedIndex].value;
+        name_table = name_table+' '+sel_value
+
+        var rec_data = table_data[name_table];
+        var idx = rand_int(rec_data)
+        var temp_str = rec_data[idx];
+        if (temp_str.indexOf('##') == 0){
+            temp_str = table_choose_recursive(temp_str.substr(2));
+        }
+        return '<i>({0})</i>({1}) "{2}"'.format(name_table, (idx+1).toString(), temp_str);
+
+    }
 }
 
 function add_delete(){

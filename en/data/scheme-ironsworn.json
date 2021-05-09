@@ -9,9 +9,9 @@
         "column" : 1,
         "selects" : {
             "region":{
-                "values":[["Terminus","region_terminus"],
-                          ["Outlands","region_outlands"],
-                          ["Expanse","region_expanse"]]
+                "values":[["Terminus","REGION: TERMINUS"],
+                          ["Outlands","REGION: OUTLANDS"],
+                          ["Expanse","REGION: EXPENSE"]]
             }
         }
     },
@@ -23,29 +23,57 @@
             "button_1" : {
                 "text" : "Action and Theme",
                 "icon" : "fas fa-ticket-alt fa-lg",
-                "grouped" : false,
+                "grouped" : true,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Action", "table" : "action", "repeat" : 1},
-                    {"text" : "Theme", "table" : "theme", "repeat" : 1}]
+                    {"text" : "Action", "table" : "ACTION", "repeat" : 1},
+                    {"text" : "Theme", "table" : "THEME", "repeat" : 1}]
             },
             "button_2" : {
                 "text" : "Descriptor and Focus",
                 "icon" : "fas fa-ticket-alt fa-lg",
-                "grouped" : false,
+                "grouped" : true,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Descriptor", "table" : "descriptor", "repeat" : 1},
-                    {"text" : "Focus", "table" : "focus", "repeat" : 1}]
+                    {"text" : "Descriptor", "table" : "DESCRIPTOR", "repeat" : 1},
+                    {"text" : "Focus", "table" : "FOCUS", "repeat" : 1}]
             },
             "button_3" : {
-                "text" : "Act&Th Test",
+                "text" : "Precursor Vaults: Outside",
                 "icon" : "fas fa-ticket-alt fa-lg",
-                "grouped" : false,
+                "grouped" : true,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Action", "table" : "action", "repeat" : 1, "use_select":"region"},
-                    {"text" : "Theme", "table" : "theme", "repeat" : 1}]
+                    {"text" : "Precursor Vaults: Outside - Location", "table" : "PRECURSOR VAULTS: LOCATION", "repeat" : 1},
+                    {"text" : "Scale", "table" : "PRECURSOR VAULTS: SCALE", "repeat" : 1},
+                    {"text" : "Form", "table" : "PRECURSOR VAULTS: FORM", "repeat" : 1},
+                    {"text" : "Shape", "table" : "PRECURSOR VAULTS: SHAPE", "repeat" : 1},
+                    {"text" : "Material", "table" : "PRECURSOR VAULTS: MATERIAL", "repeat" : 1},
+                    {"text" : "Outer Look", "table" : "PRECURSOR VAULTS: OUTER FIRST LOOK", "repeat" : 2}]
+            },
+            "button_4" : {
+                "text" : "Precursor Vaults: Inside",
+                "icon" : "fas fa-ticket-alt fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Inside - Look", "table" : "PRECURSOR VAULTS: INNER FIRST LOOK", "repeat" : 2},
+                    {"text" : "Purpose", "table" : "PRECURSOR VAULTS: VAULT PURPOSE", "repeat" : 1},
+                    {"text" : "Interior Feature", "table" : "PRECURSOR VAULTS: INTERIOR FEATURE", "repeat" : 1},
+                    {"text" : "Interior Peril", "table" : "PRECURSOR VAULTS: INTERIOR PERIL", "repeat" : 1},
+                    {"text" : "Interior Opportunity", "table" : "PRECURSOR VAULTS: INTERIOR OPPORTUNITY", "repeat" : 1},
+                    {"text" : "Sanctum Feature", "table" : "PRECURSOR VAULTS: SANCTUM FEATURE", "repeat" : 1},
+                    {"text" : "Sanctum Peril", "table" : "PRECURSOR VAULTS: SANCTUM PERIL", "repeat" : 1},
+                    {"text" : "Sanctum Opportunity", "table" : "PRECURSOR VAULTS: SANCTUM OPPORTUNITY", "repeat" : 1}]
+            },
+            "button_10" : {
+                "text" : "Test",
+                "icon" : "fas fa-ticket-alt fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Action", "table" : "ACTION", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Theme", "table" : "THEME", "repeat" : 1}]
             }
         }
     },
@@ -60,7 +88,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Action", "table" : "action", "repeat" : 1}]
+                    {"text" : "Action", "table" : "ACTION", "repeat" : 1}]
             },
             "button_2" : {
                 "text" : "Theme",        
@@ -68,7 +96,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Theme", "table" : "theme", "repeat" : 1}]
+                    {"text" : "Theme", "table" : "THEME", "repeat" : 1}]
             },
             "button_3" : {
                 "text" : "Descriptor",        
@@ -76,7 +104,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Descriptor", "table" : "descriptor", "repeat" : 1}]
+                    {"text" : "Descriptor", "table" : "DESCRIPTOR", "repeat" : 1}]
             },
             "button_4" : {
                 "text" : "Focus",        
@@ -84,7 +112,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Focus", "table" : "focus", "repeat" : 1}]
+                    {"text" : "Focus", "table" : "FOCUS", "repeat" : 1}]
             }            
         }
     },
@@ -99,7 +127,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "wip", "table" : "sector_name_prefix", "repeat" : 1}]
+                    {"text" : "wip", "table" : "SECTOR NAME PREFIX", "repeat" : 1}]
             },       
             "button_1" : {
                 "text" : "Sector Name",        
@@ -107,8 +135,8 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Sector Name - Prefix", "table" : "sector_name_prefix", "repeat" : 1},
-                    {"text" : "Sector Name - Suffix", "table" : "sector_name_suffix", "repeat" : 1}]
+                    {"text" : "Sector Name - Prefix", "table" : "SECTOR NAME PREFIX", "repeat" : 1},
+                    {"text" : "Sector Name - Suffix", "table" : "SECTOR NAME SUFFIX", "repeat" : 1}]
             },
             "button_2" : {
                 "text" : "Stellar Object",        
@@ -116,7 +144,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Stellar Object", "table" : "stellar_object", "repeat" : 1}]
+                    {"text" : "Stellar Object", "table" : "STELLAR OBJECT", "repeat" : 1}]
             },
             "button_3" : {
                 "text" : "Spaceborne Peril",        
@@ -124,7 +152,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Spaceborne Peril", "table" : "spaceborne_peril", "repeat" : 1}]
+                    {"text" : "Spaceborne Peril", "table" : "SPACEBORNE PERIL", "repeat" : 1}]
             },
             "button_4" : {
                 "text" : "Spaceborne Opportunity",        
@@ -132,7 +160,149 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Spaceborne Opportunity", "table" : "spaceborne_opportunity", "repeat" : 1}]
+                    {"text" : "Spaceborne Opportunity", "table" : "SPACEBORNE OPPORTUNITY", "repeat" : 1}]
+            }
+        }
+    },
+    "precursor_vaults" : {
+        "text" :  "Precursor Vaults",
+        "color" : "primary",
+        "column" : 1,
+        "buttons" : {    
+            "button_0" : {
+                "text" : "Location",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Location", "table" : "PRECURSOR VAULTS: LOCATION", "repeat" : 1}]
+            },       
+            "button_1" : {
+                "text" : "Scale",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [                    
+                    {"text" : "Precursor Vaults: Scale", "table" : "PRECURSOR VAULTS: SCALE", "repeat" : 1}]
+            },
+            "button_2" : {
+                "text" : "Form",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Form", "table" : "PRECURSOR VAULTS: FORM", "repeat" : 1}]
+            },
+            "button_3" : {
+                "text" : "Shape",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Shape", "table" : "PRECURSOR VAULTS: SHAPE", "repeat" : 1}]
+            },
+            "button_4" : {
+                "text" : "Material",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Material", "table" : "PRECURSOR VAULTS: MATERIAL", "repeat" : 1}]
+            },
+            "button_5" : {
+                "text" : "Outer First Look",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Outer First Look", "table" : "PRECURSOR VAULTS: OUTER FIRST LOOK", "repeat" : 2}]
+            }
+        }
+    },
+    "precursor_vaults_inside" : {
+        "text" :  "Precursor Vaults - Inside",
+        "color" : "primary",
+        "column" : 1,
+        "buttons" : {    
+            "button_0" : {
+                "text" : "Inner First Look",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Inner Look", "table" : "PRECURSOR VAULTS: INNER FIRST LOOK", "repeat" : 2}]
+            },       
+            "button_1" : {
+                "text" : "Vault Purpose",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [                    
+                    {"text" : "Precursor Vaults: Vault Purpose", "table" : "PRECURSOR VAULTS: VAULT PURPOSE", "repeat" : 1}]
+            },
+            "button_2" : {
+                "text" : "Interior Feature",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Interior Feature", "table" : "PRECURSOR VAULTS: INTERIOR FEATURE", "repeat" : 1}]
+            },
+            "button_3" : {
+                "text" : "Interior Peril",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Interior Peril", "table" : "PRECURSOR VAULTS: INTERIOR PERIL", "repeat" : 1}]
+            },
+            "button_4" : {
+                "text" : "Interior Opportunity",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Interior Opportunity", "table" : "PRECURSOR VAULTS: INTERIOR OPPORTUNITY", "repeat" : 1}]
+            },
+            "button_5" : {
+                "text" : "Sanctum Feature",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Sanctum Feature", "table" : "PRECURSOR VAULTS: SANCTUM FEATURE", "repeat" : 1}]
+            },
+            "button_6" : {
+                "text" : "Sanctum Peril",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Sanctum Peril", "table" : "PRECURSOR VAULTS: SANCTUM PERIL", "repeat" : 1}]
+            },
+            "button_7" : {
+                "text" : "Sanctum Opportunity",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Precursor Vaults: Sanctum Opportunity", "table" : "PRECURSOR VAULTS: SANCTUM OPPORTUNITY", "repeat" : 1}]
+            }
+        }
+    },
+    
+    "test1" : {
+        "text" :  "Test",
+        "color" : "primary",
+        "column" : 2,
+        "buttons" : {    
+            "button_0" : {
+                "text" : "Test",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "wip", "table" : "t1", "repeat" : 1}]
             }
         }
     }
