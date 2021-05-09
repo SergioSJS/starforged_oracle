@@ -108,7 +108,22 @@ function create_panel(scheme_data){
             label_g.className = 'badge badge-pill badge-'+color_group;
             label_g.innerText = text_group;
             div_g.appendChild(label_g);
-                    
+            
+            if (gp['selects']){
+                for (sel in gp['selects']){
+                    var temp_sel = document.createElement('select');
+                    temp_sel.className = 'custom-select custom-select-sm';
+                    temp_sel.id = sel;
+                    for (val in gp['selects'][sel]['values']){
+                        var option = document.createElement("option");
+                        option.value = gp['selects'][sel]['values'][val][1];
+                        option.text = gp['selects'][sel]['values'][val][0];
+                        temp_sel.appendChild(option);
+                    }
+                    div_g.appendChild(temp_sel);
+                }
+            }
+            
             // For each Button
             for (button in gp['buttons']){
                 var btn = gp['buttons'][button];
@@ -133,6 +148,7 @@ function create_panel(scheme_data){
                 temp_btn.setAttribute("onclick", "table_choose("+JSON.stringify(btn)+")");
                 div_g.appendChild(temp_btn);                                    
             }
+            
             attachTo.appendChild(div_g);
         }
     }
@@ -143,18 +159,26 @@ function table_choose(field) {
     //Action function to make a random table value
 
     var grouped = field['grouped']; // if border in log
-    var grouped_color = field['grouped_color']; // color to border in log
+    var grouped_color = field['grouped_color']; // color to border in log    
+
     var str_log = ''; // acumulate str to add in log
     // For each table
     for (table in field['tables']){
         var tb = field['tables'][table]; // table select
         var text_table = tb['text']; // value to bold print
+        var use_select = tb['use_select'];
 
         // if random table like many table names
         if (typeof(tb['table']) == 'string'){
             var name_table = tb['table'];
         }else{
             var name_table = tb['table'][rand_int(tb['table'])];
+        }
+        // if use select to define table
+        if (use_select){
+            var sel = document.getElementById(use_select);
+            var sel_value = sel.options[sel.selectedIndex].value;
+            name_table = name_table+'_'+sel_value
         }
 
         var repeat_table = tb['repeat']; // how many random values
@@ -172,7 +196,7 @@ function table_choose(field) {
                 if (table_text.indexOf('##') == 0){
                     table_text = table_choose_recursive(table_text.substr(2))
                 }
-                str_temp += table_text;
+                str_temp += '({0}) {1}'.format(idx+1, table_text);
                 // if has more repeat, add ,
                 if (i+1 < repeat_table){
                     str_temp += ', ';
@@ -186,7 +210,7 @@ function table_choose(field) {
                     if (table_text.indexOf('##') == 0){
                         table_text = table_choose_recursive(table_text.substr(2))
                     }
-                    str_temp +=  table_text+'<br/>';                    
+                    str_temp +=  '({0}) {1}<br/>'.format(idx+1, table_text);                    
                 }
                 // if has more repeat, add ,
                 if (i+1 < repeat_table){
@@ -208,11 +232,12 @@ function table_choose(field) {
 
 function table_choose_recursive(field) {
     var rec_data = table_data[field];
-    var temp_str = rec_data[rand_int(rec_data)];
+    var idx = rand_int(rec_data)
+    var temp_str = rec_data[idx];
     if (temp_str.indexOf('##') == 0){
         temp_str = table_choose_recursive(field.substr(2));
     }
-    return temp_str;
+    return '({0})({1}) {2}'.format(field, idx, temp_str);
 }
 
 function add_delete(){

@@ -3,6 +3,18 @@
         "logo_dir" : "data/ironlog.png",
         "iron_oracle" : true
     },
+    "selects" : {
+        "text" :  "Region",
+        "color" : "dark",
+        "column" : 1,
+        "selects" : {
+            "region":{
+                "values":[["Terminus","region_terminus"],
+                          ["Outlands","region_outlands"],
+                          ["Expanse","region_expanse"]]
+            }
+        }
+    },
     "atalhos" : {
         "text" :  "Shortcuts",
         "color" : "dark",
@@ -25,6 +37,15 @@
                 "tables" : [
                     {"text" : "Descriptor", "table" : "descriptor", "repeat" : 1},
                     {"text" : "Focus", "table" : "focus", "repeat" : 1}]
+            },
+            "button_3" : {
+                "text" : "Act&Th Test",
+                "icon" : "fas fa-ticket-alt fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Action", "table" : "action", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Theme", "table" : "theme", "repeat" : 1}]
             }
         }
     },
@@ -65,6 +86,46 @@
                 "tables" : [
                     {"text" : "Focus", "table" : "focus", "repeat" : 1}]
             }            
+        }
+    },
+    "space_encounters" : {
+        "text" :  "Space Encounters",
+        "color" : "primary",
+        "column" : 2,
+        "buttons" : {           
+            "button_1" : {
+                "text" : "Sector Name",        
+                "icon" : "fas fa-signature fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Sector Name - Prefix", "table" : "sector_name_prefix", "repeat" : 1},
+                    {"text" : "Sector Name - Suffix", "table" : "sector_name_suffix", "repeat" : 1}]
+            },
+            "button_2" : {
+                "text" : "Stellar Object",        
+                "icon" : "fas fa-sun fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Stellar Object", "table" : "stellar_object", "repeat" : 1}]
+            },
+            "button_3" : {
+                "text" : "Spaceborne Peril",        
+                "icon" : "fas fa-biohazard fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Spaceborne Peril", "table" : "spaceborne_peril", "repeat" : 1}]
+            },
+            "button_4" : {
+                "text" : "Spaceborne Opportunity",        
+                "icon" : "fas fa-thumbs-up fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Spaceborne Opportunity", "table" : "spaceborne_opportunity", "repeat" : 1}]
+            }
         }
     }
 }
