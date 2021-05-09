@@ -2,3 +2,7 @@ html body {
     background-color: rgb(37, 37, 37);
     color: aliceblue;
 }
+
+.modal-content{
+    background-color: rgb(37, 37, 37) !important;
+}
