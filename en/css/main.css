@@ -1,8 +1,33 @@
 html body {
-    background-color: rgb(37, 37, 37);
+    background-color: #252525;
     color: aliceblue;
 }
 
 .modal-content{
-    background-color: rgb(37, 37, 37) !important;
+    background-color: #252525 !important;
+}
+
+.container-size{
+    height: 80vh;
+    overflow: auto;
+}
+
+
+.style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+	background-color: #F5E5E5;
+}
+
+.style-3::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #252525;
+}
+
+.style-3::-webkit-scrollbar-thumb
+{
+	background-color: #454040;
+    border-radius: 10px;
 }
