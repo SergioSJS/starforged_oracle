@@ -1,7 +1,7 @@
 {
     "name": "Starforged Oracles",
     "short_name": "Starforged",
-    "start_url": "../starforged_oracle/en/",
+    "start_url": "../starforged_oracle/en/index.html",
     "display": "standalone",
     "background_color": "#373737",
     "description": "Starforged Oracles",
