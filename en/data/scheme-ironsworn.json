@@ -92,7 +92,15 @@
         "text" :  "Space Encounters",
         "color" : "primary",
         "column" : 2,
-        "buttons" : {           
+        "buttons" : {    
+            "button_0" : {
+                "text" : "Space Sighting (wip)",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "wip", "table" : "sector_name_prefix", "repeat" : 1}]
+            },       
             "button_1" : {
                 "text" : "Sector Name",        
                 "icon" : "fas fa-signature fa-lg",
