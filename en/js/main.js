@@ -195,8 +195,11 @@ function table_choose(field) {
                 // if special characteres for relationship between tables
                 if (table_text.indexOf('##') == 0){
                     table_text = table_choose_recursive(table_text.substr(2))
+                    str_temp += '({0}) {1}'.format(idx+1, table_text);
                 }
-                str_temp += '({0}) "{1}"'.format(idx+1, table_text);
+                else{
+                    str_temp += '({0}) <text class="text-info-iron">"{1}"</text>'.format(idx+1, table_text);
+                }
                 // if has more repeat, add ,
                 if (i+1 < repeat_table){
                     str_temp += ', ';
@@ -216,7 +219,7 @@ function table_choose(field) {
                         str_temp +=  '({0}) {1}<br/>'.format((idx+1).toString(), table_text);
                     }
                     else{
-                        str_temp += '<i>({0})</i>({1}) "{2}"<br/>'.format(table_text, (idx+1).toString(), table_text);
+                        str_temp += '<i>({0})</i>({1}) <text class="text-info-iron">"{2}"</text><br/>'.format(table_text, (idx+1).toString(), table_text);
                     }
                     
                 }
@@ -227,7 +230,7 @@ function table_choose(field) {
             }
         }
         // accumulate str_log
-        str_log += '<div><strong>{0} -></strong> {1}</div>'.format(text_table, str_temp);
+        str_log += '<div><strong>• {0} -></strong> {1}</div>'.format(text_table, str_temp);
                    
     }
     // if grouped
@@ -244,10 +247,35 @@ function table_choose_recursive(field) {
         var rec_data = table_data[field];
         var idx = rand_int(rec_data)
         var temp_str = rec_data[idx];
-        if (temp_str.indexOf('##') == 0){
-            temp_str = table_choose_recursive(temp_str.substr(2));
+        if (typeof(temp_str) == 'string'){
+            if (temp_str.indexOf('##') == 0){
+                temp_str = table_choose_recursive(temp_str.substr(2));
+                return '<i>({0})</i>({1}) {2}'.format(field, (idx+1).toString(), temp_str);
+            }
+            else{
+                return '<i>({0})</i>({1}) <text class="text-info-iron">"{2}"</text>'.format(field, (idx+1).toString(), temp_str);
+            }
+            
         }
-        return '<i>({0})</i>({1}) "{2}"'.format(field, (idx+1).toString(), temp_str);
+        else{
+            var str_temp = '';  // accumulate str
+            for (obj in temp_str){
+                var table_text = temp_str[obj];
+                // if special characteres for relationship between tables
+                if (table_text.indexOf('##') == 0){
+                    table_text = table_choose_recursive(table_text.substr(2));
+                    str_temp +=  '{0}'.format(table_text);
+                }
+                else if (typeof(table_text) == 'object'){
+                    table_text = table_choose_recursive(table_text);
+                    str_temp +=  '{0}'.format(table_text);
+                }
+                else{
+                    str_temp += '{0}'.format(table_text);
+                }
+            }
+            return str_temp;
+        }
     }
     else{
         var name_table = field[0].substr(2)
@@ -261,8 +289,11 @@ function table_choose_recursive(field) {
         var temp_str = rec_data[idx];
         if (temp_str.indexOf('##') == 0){
             temp_str = table_choose_recursive(temp_str.substr(2));
+            return '<i>({0})</i>({1}) {2}'.format(name_table, (idx+1).toString(), temp_str);
         }
-        return '<i>({0})</i>({1}) "{2}"'.format(name_table, (idx+1).toString(), temp_str);
+        else{
+            return '<i>({0})</i>({1}) "{2}"'.format(name_table, (idx+1).toString(), temp_str);
+        }
 
     }
 }

@@ -11,6 +11,9 @@ html body {
     height: 80vh;
     overflow: auto;
 }
+.text-info-iron {
+    color: #66eeff !important;
+}
 
 
 .style-3::-webkit-scrollbar-track

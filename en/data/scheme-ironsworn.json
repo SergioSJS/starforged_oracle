@@ -297,12 +297,20 @@
         "column" : 2,
         "buttons" : {    
             "button_0" : {
-                "text" : "Test",        
+                "text" : "Test1",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : true,
                 "grouped_color" : "secondary",
                 "tables" : [
                     {"text" : "wip", "table" : "t1", "repeat" : 1}]
+            },
+            "button_1" : {
+                "text" : "Test2",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "wip", "table" : "test rec", "repeat" : 1}]
             }
         }
     }

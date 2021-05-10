@@ -20,6 +20,14 @@
       ["aaaaaaaaaaa", "##THEME", "##THEME", "##ACTION", ["##ACTION", "region"]],
       ["bbbbbbbbbbb", "##THEME", "##ACTION", ["##ACTION","region"], ["##ACTION", "region"]]
    ],
+   "test rec":[
+      "wwwwww",
+      "xxxxxx",
+      "yyyyyy",
+      "zzzzzz",
+      "##test rec",
+      ["##test rec", "##test rec"]
+   ],
     
 
 
