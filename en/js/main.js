@@ -158,7 +158,7 @@ function create_panel(scheme_data){
 
 function table_choose(field) {
     //Action function to make a random table value
-
+    skip_output = false
     var grouped = field['grouped']; // if border in log
     var grouped_color = field['grouped_color']; // color to border in log    
 
@@ -196,6 +196,7 @@ function table_choose(field) {
                 // if special characteres for relationship between tables
                 if (table_text.indexOf('&&') == 0){
                     document.getElementById(table_text.substr(2)).click()
+                    skip_output = true
                 }
                 else if (table_text.indexOf('##') == 0){
                     table_text = table_choose_recursive(table_text.substr(2))
@@ -216,6 +217,7 @@ function table_choose(field) {
                     // if special characteres for relationship between tables
                     if (table_text.indexOf('&&') == 0){
                         document.getElementById(table_text.substr(2)).click()
+                        skip_output = true
                     }
                     else if (table_text.indexOf('##') == 0){
                         table_text = table_choose_recursive(table_text.substr(2))
@@ -244,8 +246,10 @@ function table_choose(field) {
     if (grouped){        
         str_log = '<div class="border border-{0} p-1 mb-1 mt-2 rounded">{1}</div>'.format(grouped_color, str_log)
     }
-    // add in log
-    insert_data(str_log);
+    if(skip_output == false){
+        // add in log
+        insert_data(str_log);
+    }
 }
 
 function table_choose_recursive(field) {
