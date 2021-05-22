@@ -9,9 +9,9 @@
         "column" : 1,
         "selects" : {
             "region":{
-                "values":[["Terminus","REGION: TERMINUS"],
-                          ["Outlands","REGION: OUTLANDS"],
-                          ["Expanse","REGION: EXPENSE"]]
+                "values":[["Terminus","(Terminus)"],
+                          ["Outlands","(Outlands)"],
+                          ["Expanse","(Expense)"]]
             }
         }
     },
@@ -20,7 +20,7 @@
         "color" : "dark",
         "column" : 1,
         "buttons" : {
-            "button_1" : {
+            "act_theme" : {
                 "text" : "Action and Theme",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
@@ -29,7 +29,7 @@
                     {"text" : "Action", "table" : "ACTION", "repeat" : 1},
                     {"text" : "Theme", "table" : "THEME", "repeat" : 1}]
             },
-            "button_2" : {
+            "desc_focus" : {
                 "text" : "Descriptor and Focus",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
@@ -38,7 +38,7 @@
                     {"text" : "Descriptor", "table" : "DESCRIPTOR", "repeat" : 1},
                     {"text" : "Focus", "table" : "FOCUS", "repeat" : 1}]
             },
-            "button_3" : {
+            "prec_vault_outside" : {
                 "text" : "Precursor Vaults: Outside",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
@@ -51,7 +51,7 @@
                     {"text" : "Material", "table" : "PRECURSOR VAULTS: MATERIAL", "repeat" : 1},
                     {"text" : "Outer Look", "table" : "PRECURSOR VAULTS: OUTER FIRST LOOK", "repeat" : 2}]
             },
-            "button_4" : {
+            "prec_vault_inside" : {
                 "text" : "Precursor Vaults: Inside",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
@@ -66,7 +66,15 @@
                     {"text" : "Sanctum Peril", "table" : "PRECURSOR VAULTS: SANCTUM PERIL", "repeat" : 1},
                     {"text" : "Sanctum Opportunity", "table" : "PRECURSOR VAULTS: SANCTUM OPPORTUNITY", "repeat" : 1}]
             },
-            "button_10" : {
+            "planet" : {
+                "text" : "Planet",
+                "icon" : "fas fa-ticket-alt fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Planet", "table" : "PLANET", "repeat" : 1}]
+            },
+            "Test" : {
                 "text" : "Test",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
@@ -82,7 +90,7 @@
         "color" : "secondary",
         "column" : 1,
         "buttons" : {           
-            "button_1" : {
+            "act" : {
                 "text" : "Action",        
                 "icon" : "fas fa-exclamation fa-lg",
                 "grouped" : false,
@@ -90,7 +98,7 @@
                 "tables" : [
                     {"text" : "Action", "table" : "ACTION", "repeat" : 1}]
             },
-            "button_2" : {
+            "theme" : {
                 "text" : "Theme",        
                 "icon" : "fas fa-question fa-lg",
                 "grouped" : false,
@@ -98,7 +106,7 @@
                 "tables" : [
                     {"text" : "Theme", "table" : "THEME", "repeat" : 1}]
             },
-            "button_3" : {
+            "desc" : {
                 "text" : "Descriptor",        
                 "icon" : "fas fa-exclamation fa-lg",
                 "grouped" : false,
@@ -106,7 +114,7 @@
                 "tables" : [
                     {"text" : "Descriptor", "table" : "DESCRIPTOR", "repeat" : 1}]
             },
-            "button_4" : {
+            "focus" : {
                 "text" : "Focus",        
                 "icon" : "fas fa-question fa-lg",
                 "grouped" : false,
@@ -121,7 +129,7 @@
         "color" : "primary",
         "column" : 2,
         "buttons" : {    
-            "button_0" : {
+            "space_sighting" : {
                 "text" : "Space Sighting (wip)",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -129,7 +137,7 @@
                 "tables" : [
                     {"text" : "wip", "table" : "SECTOR NAME PREFIX", "repeat" : 1}]
             },       
-            "button_1" : {
+            "sector_name" : {
                 "text" : "Sector Name",        
                 "icon" : "fas fa-signature fa-lg",
                 "grouped" : false,
@@ -138,7 +146,7 @@
                     {"text" : "Sector Name - Prefix", "table" : "SECTOR NAME PREFIX", "repeat" : 1},
                     {"text" : "Sector Name - Suffix", "table" : "SECTOR NAME SUFFIX", "repeat" : 1}]
             },
-            "button_2" : {
+            "stellar_object" : {
                 "text" : "Stellar Object",        
                 "icon" : "fas fa-sun fa-lg",
                 "grouped" : false,
@@ -146,7 +154,7 @@
                 "tables" : [
                     {"text" : "Stellar Object", "table" : "STELLAR OBJECT", "repeat" : 1}]
             },
-            "button_3" : {
+            "spaceborne_peril" : {
                 "text" : "Spaceborne Peril",        
                 "icon" : "fas fa-biohazard fa-lg",
                 "grouped" : false,
@@ -154,7 +162,7 @@
                 "tables" : [
                     {"text" : "Spaceborne Peril", "table" : "SPACEBORNE PERIL", "repeat" : 1}]
             },
-            "button_4" : {
+            "spaceborne_opp" : {
                 "text" : "Spaceborne Opportunity",        
                 "icon" : "fas fa-thumbs-up fa-lg",
                 "grouped" : false,
@@ -169,7 +177,7 @@
         "color" : "primary",
         "column" : 1,
         "buttons" : {    
-            "button_0" : {
+            "prec_vault_location" : {
                 "text" : "Location",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -177,7 +185,7 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Location", "table" : "PRECURSOR VAULTS: LOCATION", "repeat" : 1}]
             },       
-            "button_1" : {
+            "prec_vault_scale" : {
                 "text" : "Scale",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -185,7 +193,7 @@
                 "tables" : [                    
                     {"text" : "Precursor Vaults: Scale", "table" : "PRECURSOR VAULTS: SCALE", "repeat" : 1}]
             },
-            "button_2" : {
+            "prec_vault_form" : {
                 "text" : "Form",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -193,7 +201,7 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Form", "table" : "PRECURSOR VAULTS: FORM", "repeat" : 1}]
             },
-            "button_3" : {
+            "prec_vault_shape" : {
                 "text" : "Shape",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -201,7 +209,7 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Shape", "table" : "PRECURSOR VAULTS: SHAPE", "repeat" : 1}]
             },
-            "button_4" : {
+            "prec_vault_material" : {
                 "text" : "Material",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -209,7 +217,7 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Material", "table" : "PRECURSOR VAULTS: MATERIAL", "repeat" : 1}]
             },
-            "button_5" : {
+            "prec_vault_out_look" : {
                 "text" : "Outer First Look",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -224,7 +232,7 @@
         "color" : "primary",
         "column" : 1,
         "buttons" : {    
-            "button_0" : {
+            "prec_vault_in_look" : {
                 "text" : "Inner First Look",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -232,7 +240,7 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Inner Look", "table" : "PRECURSOR VAULTS: INNER FIRST LOOK", "repeat" : 2}]
             },       
-            "button_1" : {
+            "prec_vault_purpose" : {
                 "text" : "Vault Purpose",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -240,7 +248,7 @@
                 "tables" : [                    
                     {"text" : "Precursor Vaults: Vault Purpose", "table" : "PRECURSOR VAULTS: VAULT PURPOSE", "repeat" : 1}]
             },
-            "button_2" : {
+            "prec_vault_feature" : {
                 "text" : "Interior Feature",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -248,7 +256,7 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Interior Feature", "table" : "PRECURSOR VAULTS: INTERIOR FEATURE", "repeat" : 1}]
             },
-            "button_3" : {
+            "prec_vault_int_peril" : {
                 "text" : "Interior Peril",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -256,7 +264,7 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Interior Peril", "table" : "PRECURSOR VAULTS: INTERIOR PERIL", "repeat" : 1}]
             },
-            "button_4" : {
+            "prec_vault_int_opp" : {
                 "text" : "Interior Opportunity",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -264,7 +272,7 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Interior Opportunity", "table" : "PRECURSOR VAULTS: INTERIOR OPPORTUNITY", "repeat" : 1}]
             },
-            "button_5" : {
+            "prec_vault_sanc_feature" : {
                 "text" : "Sanctum Feature",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -272,7 +280,7 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Sanctum Feature", "table" : "PRECURSOR VAULTS: SANCTUM FEATURE", "repeat" : 1}]
             },
-            "button_6" : {
+            "buttonprec_vault_sanc_peril" : {
                 "text" : "Sanctum Peril",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
@@ -280,13 +288,33 @@
                 "tables" : [
                     {"text" : "Precursor Vaults: Sanctum Peril", "table" : "PRECURSOR VAULTS: SANCTUM PERIL", "repeat" : 1}]
             },
-            "button_7" : {
+            "prec_vault_sanc_opp" : {
                 "text" : "Sanctum Opportunity",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
                     {"text" : "Precursor Vaults: Sanctum Opportunity", "table" : "PRECURSOR VAULTS: SANCTUM OPPORTUNITY", "repeat" : 1}]
+            }
+        }
+    },
+    "planets":{
+        "text" :  "Planets",
+        "color" : "primary",
+        "column" : 2,
+        "buttons" : {    
+            "desert_world" : {
+                "text" : "Desert World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "DESERT WORLD<br> • Atmosphere", "table" : "DESERT WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "DESERT WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "DESERT WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "DESERT WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "DESERT WORLD - LIFE", "repeat" : 1}
+                ]
             }
         }
     },
