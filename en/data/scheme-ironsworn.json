@@ -315,6 +315,136 @@
                     {"text" : "Planetside feature", "table" : "DESERT WORLD - PLANETSIDE FEATURE", "repeat" : 1},
                     {"text" : "Life", "table" : "DESERT WORLD - LIFE", "repeat" : 1}
                 ]
+            },
+            "furnace_world" : {
+                "text" : "Furnace World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "FURNACE WORLD<br> • Atmosphere", "table" : "FURNACE WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "FURNACE WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "FURNACE WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "FURNACE WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "FURNACE WORLD - LIFE", "repeat" : 1}
+                ]
+            },
+            "grave_world" : {
+                "text" : "Grave World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "GRAVE WORLD<br> • Atmosphere", "table" : "GRAVE WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "GRAVE WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "GRAVE WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "GRAVE WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "GRAVE WORLD - LIFE", "repeat" : 1}
+                ]
+            },
+            "ice_world" : {
+                "text" : "Ice World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "ICE WORLD<br> • Atmosphere", "table" : "ICE WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "ICE WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "ICE WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "ICE WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "ICE WORLD - LIFE", "repeat" : 1}
+                ]
+            },
+            "jovian_world" : {
+                "text" : "Jovian World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "JOVIAN WORLD<br> • Atmosphere", "table" : "JOVIAN WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "JOVIAN WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "JOVIAN WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "JOVIAN WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "JOVIAN WORLD - LIFE", "repeat" : 1}
+                ]
+            },
+            "jungle_world" : {
+                "text" : "Jungle World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "JUNGLE WORLD<br> • Atmosphere", "table" : "JUNGLE WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "JUNGLE WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "JUNGLE WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "JUNGLE WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "JUNGLE WORLD - LIFE", "repeat" : 1}
+                ]
+            },
+            "ocean_world" : {
+                "text" : "Ocean World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "OCEAN WORLD<br> • Atmosphere", "table" : "OCEAN WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "OCEAN WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "OCEAN WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "OCEAN WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "OCEAN WORLD - LIFE", "repeat" : 1}
+                ]
+            },
+            "rocky_world" : {
+                "text" : "Rocky World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "ROCKY WORLD<br> • Atmosphere", "table" : "ROCKY WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "ROCKY WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "ROCKY WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "ROCKY WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "ROCKY WORLD - LIFE", "repeat" : 1}
+                ]
+            },
+            "shattered_world" : {
+                "text" : "Shattered World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "SHATTERED WORLD<br> • Atmosphere", "table" : "SHATTERED WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "SHATTERED WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "SHATTERED WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "SHATTERED WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "SHATTERED WORLD - LIFE", "repeat" : 1}
+                ]
+            },
+            "tainted_world" : {
+                "text" : "Tainted World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "TAINTED WORLD<br> • Atmosphere", "table" : "TAINTED WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "TAINTED WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "TAINTED WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "TAINTED WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "TAINTED WORLD - LIFE", "repeat" : 1}
+                ]
+            },
+            "vital_world" : {
+                "text" : "Vital World",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "VITAL WORLD<br> • Atmosphere", "table" : "VITAL WORLD - ATMOSPHERE", "repeat" : 1},
+                    {"text" : "Settlements", "table" : "VITAL WORLD - SETTLEMENTS", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Observed from space", "table" : "VITAL WORLD - OBSERVED FROM SPACE", "repeat" : 2},
+                    {"text" : "Planetside feature", "table" : "VITAL WORLD - PLANETSIDE FEATURE", "repeat" : 1},
+                    {"text" : "Life", "table" : "VITAL WORLD - LIFE", "repeat" : 1}
+                ]
             }
         }
     },
