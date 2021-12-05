@@ -2164,7 +2164,7 @@
 
 
 
-   "0 - Character":[],
+   "0 - Character **":[],
   "GIVEN NAME": [
     "Akim",
     "Alex",
@@ -2780,11 +2780,11 @@
       "##ACTION",
       "##THEME"
     ],
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice"
+    ["##ROLE","##ROLE"],
+    ["##ROLE","##ROLE"],
+    ["##ROLE","##ROLE"],
+    ["##ROLE","##ROLE"],
+    ["##ROLE","##ROLE"]
   ],
   "GOAL": [
     "Avenge a wrong",
@@ -2907,16 +2907,16 @@
       "##ACTION",
       "##THEME"
     ],
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice"
+    ["##GOAL","##GOAL"],
+    ["##GOAL","##GOAL"],
+    ["##GOAL","##GOAL"],
+    ["##GOAL","##GOAL"],
+    ["##GOAL","##GOAL"],
+    ["##GOAL","##GOAL"],
+    ["##GOAL","##GOAL"],
+    ["##GOAL","##GOAL"],
+    ["##GOAL","##GOAL"],
+    ["##GOAL","##GOAL"]
   ],
   "CHARACTER - REVEALED ASPECT": [
     "Addicted",
@@ -3637,7 +3637,7 @@
   ],
 
 
-  "2 - Core":[],
+  "2 - Core **":[],
   "ACTION": [
     "Abandon",
     "Acquire",
@@ -4048,7 +4048,7 @@
   ],
 
 
-  "3 - Creature":[],
+  "3 - Creature **":[],
   "ENVIRONMENT": [
     "Space",
     "Space",
@@ -4151,6 +4151,109 @@
     "Air",
     "Air"
   ],
+  "ENVIRONMENT - FORM": [
+    [ "SPACE", "##BASIC FORM - SPACE" ],
+    [ "SPACE", "##BASIC FORM - SPACE" ],
+    [ "SPACE", "##BASIC FORM - SPACE" ],
+    [ "SPACE", "##BASIC FORM - SPACE" ],
+    [ "SPACE", "##BASIC FORM - SPACE" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "INTERIOR", "##BASIC FORM - INTERIOR" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LAND", "##BASIC FORM - LAND" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "LIQUID", "##BASIC FORM - LIQUID" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ],
+    [ "AIR", "##BASIC FORM - AIR" ]
+  ],
+
   "CREATURE - SCALE": [
     "Minuscule: <i>bug-sized</i>",
     "Minuscule: <i>bug-sized</i>",
@@ -4357,6 +4460,7 @@
     "Colossal: <i>mountain-sized</i>",
     "Vast: <i>planet-sized</i>"
   ],
+  
   "BASIC FORM - SPACE": [
     "Amoeba / pseudopods",
     "Amoeba / pseudopods",
@@ -4448,16 +4552,16 @@
     "Starfish / symmetrical",
     "Worm / slug / larva",
     "Worm / slug / larva",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice"
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"],
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"],
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"],
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"],
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"],
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"],
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"],
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"],
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"],
+    ["##BASIC FORM - SPACE","##BASIC FORM - SPACE"]
   ],
   "BASIC FORM - INTERIOR": [
     "Amoeba / pseudopods",
@@ -4550,16 +4654,16 @@
     "Worm / slug / larva",
     "Worm / slug / larva",
     "Worm / slug / larva",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice"
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"],
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"],
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"],
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"],
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"],
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"],
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"],
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"],
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"],
+    ["##BASIC FORM - INTERIOR","##BASIC FORM - INTERIOR"]
   ],
   "BASIC FORM - LAND": [
     "Amoeba / pseudopods",
@@ -4652,16 +4756,16 @@
     "Worm / slug / larva",
     "Worm / slug / larva",
     "Worm / slug / larva",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice"
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"],
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"],
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"],
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"],
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"],
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"],
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"],
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"],
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"],
+    ["##BASIC FORM - LAND","##BASIC FORM - LAND"]
   ],
   "BASIC FORM - LIQUID": [
     "Amoeba / pseudopods",
@@ -4754,16 +4858,16 @@
     "Worm / slug / larva",
     "Worm / slug / larva",
     "Worm / slug / larva",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice"
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"],
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"],
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"],
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"],
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"],
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"],
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"],
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"],
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"],
+    ["##BASIC FORM - LIQUID","##BASIC FORM - LIQUID"]
   ],
   "BASIC FORM - AIR": [
     "Amoeba / pseudopods",
@@ -4856,17 +4960,18 @@
     "Starfish / symmetrical",
     "Worm / slug / larva",
     "Worm / slug / larva",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice"
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"],
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"],
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"],
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"],
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"],
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"],
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"],
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"],
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"],
+    ["##BASIC FORM - AIR","##BASIC FORM - AIR"]
   ],
+  
   "CREATURE - FIRST LOOK": [
     "Antennae or sensory organs",
     "Antennae or sensory organs",
@@ -5065,11 +5170,11 @@
     "Trapper",
     "Trapper",
     "Trapper",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice",
-    "Roll twice"
+    ["##ENCOUNTERED BEHAVIOR","##ENCOUNTERED BEHAVIOR"],
+    ["##ENCOUNTERED BEHAVIOR","##ENCOUNTERED BEHAVIOR"],
+    ["##ENCOUNTERED BEHAVIOR","##ENCOUNTERED BEHAVIOR"],
+    ["##ENCOUNTERED BEHAVIOR","##ENCOUNTERED BEHAVIOR"],
+    ["##ENCOUNTERED BEHAVIOR","##ENCOUNTERED BEHAVIOR"]
   ],
   "CREATURE - REVEALED ASPECT": [
     "Alternative environment",
@@ -16953,7 +17058,7 @@
   ],
 
 
-  "9 - Planet":[],
+  "9 - Planet **":[],
   "PLANETARY CLASS": [
     "\u25b6\ufe0fDesert World",
     "\u25b6\ufe0fDesert World",
@@ -17165,7 +17270,7 @@
       "##ACTION",
       "##THEME"
     ],
-    "Roll twice"
+    ["PERIL - LIFEBEARING","PERIL - LIFEBEARING"]
   ],
   "PERIL - LIFELESS": [
     "Life is revealed or takes an unexpected form",
@@ -17279,7 +17384,7 @@
       "##ACTION",
       "##THEME"
     ],
-    "Roll twice"
+    ["PERIL - LIFELESS","PERIL - LIFELESS"]
   ],
   "OPPORTUNITY - LIFEBEARING": [
     "Clue to a lifeform's nature or vulnerabilities",
@@ -28097,7 +28202,7 @@
     "Deep Space",
     "Deep Space"
   ],
-  "POPULATION - TERMINUS": [
+  "POPULATION (Terminus)": [
     "Few",
     "Few",
     "Few",
@@ -28199,7 +28304,7 @@
     "Tens of thousands",
     "Tens of thousands"
   ],
-  "POPULATION - OUTLANDS": [
+  "POPULATION (Outlands)": [
     "Few",
     "Few",
     "Few",
@@ -28301,7 +28406,7 @@
     "Tens of thousands",
     "Tens of thousands"
   ],
-  "POPULATION - EXPANSE": [
+  "POPULATION (Expanse)": [
     "Few",
     "Few",
     "Few",
@@ -29111,7 +29216,7 @@
 
 
   "12 - Space":[],
-  "SPACE SIGHTING - TERMINUS": [
+  "SPACE SIGHTING (Terminus)": [
     [
       "##STELLAR OBJECT"
     ],
@@ -29352,7 +29457,7 @@
     "Roll three times",
     "Roll three times"
   ],
-  "SPACE SIGHTING - OUTLANDS": [
+  "SPACE SIGHTING (Outlands)": [
     [
       "##STELLAR OBJECT"
     ],
@@ -29597,7 +29702,7 @@
     "Roll three times",
     "Roll three times"
   ],
-  "SPACE SIGHTING - EXPANSE": [
+  "SPACE SIGHTING (Expanse)": [
     [
       "##STELLAR OBJECT"
     ],
@@ -30946,7 +31051,7 @@
       "##FOCUS"
     ]
   ],
-  "MISSION - TERMINUS": [
+  "MISSION (Terminus)": [
     "Blockade a location",
     "Blockade a location",
     "Blockade a location",
@@ -31063,7 +31168,7 @@
     "Roll twice",
     "Roll twice"
   ],
-  "MISSION - OUTLANDS": [
+  "MISSION (Outlands)": [
     "Blockade a location",
     "Blockade a location",
     "Break a blockade",
@@ -31180,7 +31285,7 @@
     "Roll twice",
     "Roll twice"
   ],
-  "MISSION - EXPANSE": [
+  "MISSION (Expanse)": [
     "Blockade a location",
     "Blockade a location",
     "Break a blockade",
@@ -31297,7 +31402,4 @@
     "Roll twice",
     "Roll twice"
   ]
-
-
-
  }

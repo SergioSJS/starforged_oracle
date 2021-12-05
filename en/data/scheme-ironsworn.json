@@ -38,13 +38,48 @@
                     {"text" : "Descriptor", "table" : "DESCRIPTOR", "repeat" : 1},
                     {"text" : "Focus", "table" : "FOCUS", "repeat" : 1}]
             },
+            "planet" : {
+                "text" : "Planet",
+                "icon" : "fas fa-ticket-alt fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Planet", "table" : "PLANET", "repeat" : 1}]
+            },
+            "character" : {
+                "text" : "Character",
+                "icon" : "fas fa-ticket-alt fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "CHARACTER<br> • Name", "table" : "GIVEN NAME", "repeat" : 1},
+                    {"text" : "Family", "table" : "FAMILY NAME", "repeat" : 1},
+                    {"text" : "Callsign", "table" : "CALLSIGN", "repeat" : 1},
+                    {"text" : "First Look", "table" : "CHARACTER - FIRST LOOK", "repeat" : 1},
+                    {"text" : "Disposition", "table" : "DISPOSITION", "repeat" : 1},
+                    {"text" : "Role", "table" : "ROLE", "repeat" : 1},
+                    {"text" : "Goal", "table" : "GOAL", "repeat" : 1},
+                    {"text" : "Revealed Aspect", "table" : "CHARACTER - REVEALED ASPECT", "repeat" : 1}]
+            },
+            "creature" : {
+                "text" : "Creature",        
+                "icon" : "fas fa-signature fa-lg",
+                "grouped" : true,
+                "grouped_color" : "primary",
+                "tables" : [
+                    {"text" : "CREATURE<br> • Scale", "table" : "CREATURE - SCALE", "repeat" : 1},
+                    {"text" : "Environment and Form", "table" : "ENVIRONMENT - FORM", "repeat" : 1},
+                    {"text" : "Encountered Behavior", "table" : "ENCOUNTERED BEHAVIOR", "repeat" : 1},
+                    {"text" : "Revealed Aspect", "table" : "CREATURE - REVEALED ASPECT", "repeat" : 1}]
+            },
+
             "prec_vault_outside" : {
                 "text" : "Precursor Vaults: Outside",
                 "icon" : "fas fa-ticket-alt fa-lg",
                 "grouped" : true,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Outside - Location", "table" : "PRECURSOR VAULTS: LOCATION", "repeat" : 1},
+                    {"text" : "Precursor Vaults<br> • Outside - Location", "table" : "PRECURSOR VAULTS: LOCATION", "repeat" : 1},
                     {"text" : "Scale", "table" : "PRECURSOR VAULTS: SCALE", "repeat" : 1},
                     {"text" : "Form", "table" : "PRECURSOR VAULTS: FORM", "repeat" : 1},
                     {"text" : "Shape", "table" : "PRECURSOR VAULTS: SHAPE", "repeat" : 1},
@@ -66,14 +101,7 @@
                     {"text" : "Sanctum Peril", "table" : "PRECURSOR VAULTS: SANCTUM PERIL", "repeat" : 1},
                     {"text" : "Sanctum Opportunity", "table" : "PRECURSOR VAULTS: SANCTUM OPPORTUNITY", "repeat" : 1}]
             },
-            "planet" : {
-                "text" : "Planet",
-                "icon" : "fas fa-ticket-alt fa-lg",
-                "grouped" : true,
-                "grouped_color" : "secondary",
-                "tables" : [
-                    {"text" : "Planet", "table" : "PLANET", "repeat" : 1}]
-            },
+            
             "Test" : {
                 "text" : "Test",
                 "icon" : "fas fa-ticket-alt fa-lg",
@@ -85,6 +113,197 @@
             }
         }
     },
+
+    "character" : {
+        "text" :  "Character",
+        "color" : "secondary",
+        "column" : 1,
+        "buttons" : {   
+            "name_complete" : {
+                "text" : "Name",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Name", "table" : "GIVEN NAME", "repeat" : 1},
+                    {"text" : "Family", "table" : "FAMILY NAME", "repeat" : 1},
+                    {"text" : "Callsign", "table" : "CALLSIGN", "repeat" : 1}
+                ]
+            },
+
+            "first_look" : {
+                "text" : "First Look",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "First Look", "table" : "CHARACTER - FIRST LOOK", "repeat" : 1}]
+            },
+            "disposition_npc" : {
+                "text" : "Disposition",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Disposition", "table" : "DISPOSITION", "repeat" : 1}]
+            },
+            "role_npc" : {
+                "text" : "Role",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Role", "table" : "ROLE", "repeat" : 1}]
+            },
+            "goal_npc" : {
+                "text" : "Goal",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Goal", "table" : "GOAL", "repeat" : 1}]
+            },
+            "revealed_aspect" : {
+                "text" : "Revealed Aspect",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Revealed Aspect", "table" : "CHARACTER - REVEALED ASPECT", "repeat" : 1}]
+            },
+
+
+
+            
+            "name" : {
+                "text" : "First Name",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Given Name", "table" : "GIVEN NAME", "repeat" : 1}]
+            },
+            "family" : {
+                "text" : "Family Name",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Family Name", "table" : "FAMILY NAME", "repeat" : 1}]
+            },
+            "callsign" : {
+                "text" : "Callsign",        
+                "icon" : "fas fa-question fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Callsign", "table" :  "CALLSIGN", "repeat" : 1}]
+            }
+    
+        }
+    },
+    "creature" : {
+        "text" :  "Creature",
+        "color" : "secondary",
+        "column" : 1,
+        "buttons" : {   
+            "environment" : {
+                "text" : "Environment",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Environment", "table" : "ENVIRONMENT", "repeat" : 1}
+                ]
+            },
+            "scale" : {
+                "text" : "Scale",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Scale", "table" : "CREATURE - SCALE", "repeat" : 1}]
+            },
+            "ultra-scale" : {
+                "text" : "Ultra-Scale",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Ultra-Scale", "table" : "ULTRA-SCALE", "repeat" : 1}]
+            },
+
+            "bf-space" : {
+                "text" : "Basic Form - Espaço",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Basic Form - Espaço", "table" : "BASIC FORM - SPACE", "repeat" : 1}]
+            },
+            "bf-interior" : {
+                "text" : "Basic Form - Interior",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Basic Form - Interior", "table" : "BASIC FORM - INTERIOR", "repeat" : 1}]
+            },
+            "bf-land" : {
+                "text" : "Basic Form - Land",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Basic Form - Land", "table" : "BASIC FORM - LAND", "repeat" : 1}]
+            },      
+            "bf-liquid" : {
+                "text" : "Basic Form - Liquid",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Basic Form - Liquid", "table" : "BASIC FORM - LIQUID", "repeat" : 1}]
+            },
+            "bf-air" : {
+                "text" : "Basic Form - Air",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Basic Form - Air", "table" : "BASIC FORM - AIR", "repeat" : 1}]
+            },
+            
+            "cri-first-look" : {
+                "text" : "First Look",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "First Look", "table" : "CREATURE - FIRST LOOK", "repeat" : 1}]
+            },      
+            "cri-encountered-behavior" : {
+                "text" : "Encountered Behavior",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Encountered Behavior", "table" : "ENCOUNTERED BEHAVIOR", "repeat" : 1}]
+            },
+            "cri-revealed-aspect" : {
+                "text" : "Revealed Aspect",        
+                "icon" : "fas fa-exclamation fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Revealed Aspect", "table" : "CREATURE - REVEALED ASPECT", "repeat" : 1}]
+            }
+
+    
+        }
+    },
+
+
     "core" : {
         "text" :  "Core Oracles",
         "color" : "secondary",
@@ -302,7 +521,44 @@
         "text" :  "Planets",
         "color" : "primary",
         "column" : 2,
-        "buttons" : {    
+        "buttons" : { 
+            "planet_peril_life" : {
+                "text" : "Peril (Lifebearing)",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "PLANET PERIL (LIFEBEARING)", "table" : "PERIL - LIFEBEARING", "repeat" : 1}
+                ]
+            },
+            "planet_peril_nlife" : {
+                "text" : "Peril (Lifeless)",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "PLANET PERIL (LIFELESS)", "table" : "PERIL - LIFELESS", "repeat" : 1}
+                ]
+            },
+            "planet_op_life" : {
+                "text" : "Opportunity (Lifebearing)",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "PLANET OPPORTUNITY (LIFEBEARING)", "table" : "OPPORTUNITY - LIFEBEARING", "repeat" : 1}
+                ]
+            },
+            "planet_op_nlife" : {
+                "text" : "Opportunity (Lifeless)",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "PLANET OPPORTUNITY (LIFELESS)", "table" : "OPPORTUNITY - LIFELESS", "repeat" : 1}
+                ]
+            },
+
             "desert_world" : {
                 "text" : "Desert World",        
                 "icon" : "fas fa-meteor fa-lg",
