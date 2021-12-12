@@ -1,7 +1,7 @@
 {
     "name": "Starforged Oracles",
     "short_name": "Starforged",
-    "start_url": "../starforged_oracle/pt/",
+    "start_url": "https://sergiosjs.github.io/starforged_oracle/pt/index.html",
     "display": "standalone",
     "background_color": "#373737",
     "description": "Starforged Oracles",
@@ -18,3 +18,5 @@
         }
       ]
   }
+
+  

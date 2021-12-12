@@ -79,12 +79,12 @@
                 "grouped" : true,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults<br> • Outside - Location", "table" : "PRECURSOR VAULTS: LOCATION", "repeat" : 1},
-                    {"text" : "Scale", "table" : "PRECURSOR VAULTS: SCALE", "repeat" : 1},
-                    {"text" : "Form", "table" : "PRECURSOR VAULTS: FORM", "repeat" : 1},
-                    {"text" : "Shape", "table" : "PRECURSOR VAULTS: SHAPE", "repeat" : 1},
-                    {"text" : "Material", "table" : "PRECURSOR VAULTS: MATERIAL", "repeat" : 1},
-                    {"text" : "Outer Look", "table" : "PRECURSOR VAULTS: OUTER FIRST LOOK", "repeat" : 2}]
+                    {"text" : "Precursor Vaults<br> • Outside - Location", "table" : "PRECURSOR VAULT - LOCATION", "repeat" : 1},
+                    {"text" : "Scale", "table" : "PRECURSOR VAULT - SCALE", "repeat" : 1},
+                    {"text" : "Form", "table" : "FORM", "repeat" : 1},
+                    {"text" : "Shape", "table" : "SHAPE", "repeat" : 1},
+                    {"text" : "Material", "table" : "MATERIAL", "repeat" : 1},
+                    {"text" : "Outer Look", "table" : "PRECURSOR VAULT - FIRST LOOK", "repeat" : 2}]
             },
             "prec_vault_inside" : {
                 "text" : "Precursor Vaults: Inside",
@@ -92,14 +92,27 @@
                 "grouped" : true,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Inside - Look", "table" : "PRECURSOR VAULTS: INNER FIRST LOOK", "repeat" : 2},
-                    {"text" : "Purpose", "table" : "PRECURSOR VAULTS: VAULT PURPOSE", "repeat" : 1},
-                    {"text" : "Interior Feature", "table" : "PRECURSOR VAULTS: INTERIOR FEATURE", "repeat" : 1},
-                    {"text" : "Interior Peril", "table" : "PRECURSOR VAULTS: INTERIOR PERIL", "repeat" : 1},
-                    {"text" : "Interior Opportunity", "table" : "PRECURSOR VAULTS: INTERIOR OPPORTUNITY", "repeat" : 1},
-                    {"text" : "Sanctum Feature", "table" : "PRECURSOR VAULTS: SANCTUM FEATURE", "repeat" : 1},
-                    {"text" : "Sanctum Peril", "table" : "PRECURSOR VAULTS: SANCTUM PERIL", "repeat" : 1},
-                    {"text" : "Sanctum Opportunity", "table" : "PRECURSOR VAULTS: SANCTUM OPPORTUNITY", "repeat" : 1}]
+                    {"text" : "Precursor Vaults: Inside - Look", "table" : "VAULT INTERIOR - FIRST LOOK", "repeat" : 2},
+                    {"text" : "Purpose", "table" : "VAULT INTERIOR - PURPOSE", "repeat" : 1},
+                    {"text" : "Interior Feature", "table" : "VAULT INTERIOR - FEATURE", "repeat" : 1},
+                    {"text" : "Interior Peril", "table" : "VAULT INTERIOR - PERIL", "repeat" : 1},
+                    {"text" : "Interior Opportunity", "table" : "VAULT INTERIOR - OPPORTUNITY", "repeat" : 1},
+                    {"text" : "Sanctum Feature", "table" : "VAULT SANCTUM - FEATURE", "repeat" : 1},
+                    {"text" : "Sanctum Peril", "table" : "VAULT SANCTUM - PERIL", "repeat" : 1},
+                    {"text" : "Sanctum Opportunity", "table" : "VAULT SANCTUM - OPPORTUNITY", "repeat" : 1}]
+            },
+            "starship_complete" : {
+                "text" : "Starship",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : true,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Starship - Name", "table" : "STARSHIP - NAME", "repeat" : 1},
+                    {"text" : "Starship - Type", "table" : "STARSHIP TYPE", "repeat" : 1, "use_select":"region"},
+                    {"text" : "Starship - Initial Contact", "table" : "STARSHIP - INITIAL CONTACT", "repeat" : 1},
+                    {"text" : "Starship - First Look", "table" : "STARSHIP - FIRST LOOK", "repeat" : 1},
+                    {"text" : "Starship - Mission", "table" : "MISSION", "repeat" : 1, "use_select":"region"}
+                ]
             },
             
             "Test" : {
@@ -343,27 +356,91 @@
             }            
         }
     },
+
+    "starship" : {
+        "text" :  "Starship",
+        "color" : "primary",
+        "column" : 1,
+        "buttons" : {       
+            "starship_name" : {
+                "text" : "Starship Name",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Starship - Name", "table" : "STARSHIP - NAME", "repeat" : 1}
+                ]
+            },
+            "starship_type" : {
+                "text" : "Starship Type",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Starship - Type", "table" : "STARSHIP TYPE", "repeat" : 1, "use_select":"region"}
+                ]
+            },
+            "fleet" : {
+                "text" : "Fleet Type",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Fleet - Type", "table" : "FLEET", "repeat" : 1, "use_select":"region"}
+                ]
+            },
+            "initial_contact" : {
+                "text" : "Initial Contact",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Starship - Initial Contact", "table" : "STARSHIP - INITIAL CONTACT", "repeat" : 1}
+                ]
+            },
+            "starship_first_look" : {
+                "text" : "First Look",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Starship - First Look", "table" : "STARSHIP - FIRST LOOK", "repeat" : 1}
+                ]
+            },
+            "starship_mission" : {
+                "text" : "Starship Mission",        
+                "icon" : "fas fa-meteor fa-lg",
+                "grouped" : false,
+                "grouped_color" : "secondary",
+                "tables" : [
+                    {"text" : "Starship - Mission", "table" : "MISSION", "repeat" : 1, "use_select":"region"}
+                ]
+            }      
+        }
+    },
+
     "space_encounters" : {
         "text" :  "Space Encounters",
         "color" : "primary",
         "column" : 2,
-        "buttons" : {    
+        "buttons" : {       
             "space_sighting" : {
                 "text" : "Space Sighting (wip)",        
                 "icon" : "fas fa-meteor fa-lg",
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "wip", "table" : "SECTOR NAME PREFIX", "repeat" : 1}]
-            },       
+                    {"text" : "Space Sighting", "table" : "SPACE SIGHTING", "repeat" : 1, "use_select":"region"}
+                ]
+            },   
             "sector_name" : {
                 "text" : "Sector Name",        
                 "icon" : "fas fa-signature fa-lg",
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Sector Name - Prefix", "table" : "SECTOR NAME PREFIX", "repeat" : 1},
-                    {"text" : "Sector Name - Suffix", "table" : "SECTOR NAME SUFFIX", "repeat" : 1}]
+                    {"text" : "Sector Name - Prefix", "table" : "SECTOR NAME - PREFIX", "repeat" : 1},
+                    {"text" : "Sector Name - Suffix", "table" : "SECTOR NAME - SUFFIX", "repeat" : 1}]
             },
             "stellar_object" : {
                 "text" : "Stellar Object",        
@@ -379,7 +456,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Spaceborne Peril", "table" : "SPACEBORNE PERIL", "repeat" : 1}]
+                    {"text" : "Spaceborne Peril", "table" : "PERIL", "repeat" : 1}]
             },
             "spaceborne_opp" : {
                 "text" : "Spaceborne Opportunity",        
@@ -387,7 +464,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Spaceborne Opportunity", "table" : "SPACEBORNE OPPORTUNITY", "repeat" : 1}]
+                    {"text" : "Spaceborne Opportunity", "table" : "OPPORTUNITY", "repeat" : 1}]
             }
         }
     },
@@ -402,7 +479,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Location", "table" : "PRECURSOR VAULTS: LOCATION", "repeat" : 1}]
+                    {"text" : "Precursor Vault - Location", "table" : "PRECURSOR VAULT - LOCATION", "repeat" : 1}]
             },       
             "prec_vault_scale" : {
                 "text" : "Scale",        
@@ -410,7 +487,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [                    
-                    {"text" : "Precursor Vaults: Scale", "table" : "PRECURSOR VAULTS: SCALE", "repeat" : 1}]
+                    {"text" : "Precursor Vault - Scale", "table" : "PRECURSOR VAULT - SCALE", "repeat" : 1}]
             },
             "prec_vault_form" : {
                 "text" : "Form",        
@@ -418,7 +495,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Form", "table" : "PRECURSOR VAULTS: FORM", "repeat" : 1}]
+                    {"text" : "Precursor Vault - Form", "table" : "FORM", "repeat" : 1}]
             },
             "prec_vault_shape" : {
                 "text" : "Shape",        
@@ -426,7 +503,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Shape", "table" : "PRECURSOR VAULTS: SHAPE", "repeat" : 1}]
+                    {"text" : "Precursor Vault - Shape", "table" : "SHAPE", "repeat" : 1}]
             },
             "prec_vault_material" : {
                 "text" : "Material",        
@@ -434,7 +511,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Material", "table" : "PRECURSOR VAULTS: MATERIAL", "repeat" : 1}]
+                    {"text" : "Precursor Vault - Material", "table" : "MATERIAL", "repeat" : 1}]
             },
             "prec_vault_out_look" : {
                 "text" : "Outer First Look",        
@@ -442,7 +519,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Outer First Look", "table" : "PRECURSOR VAULTS: OUTER FIRST LOOK", "repeat" : 2}]
+                    {"text" : "Precursor Vault - First Look", "table" : "PRECURSOR VAULT - FIRST LOOK", "repeat" : 2}]
             }
         }
     },
@@ -457,7 +534,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Inner Look", "table" : "PRECURSOR VAULTS: INNER FIRST LOOK", "repeat" : 2}]
+                    {"text" : "Precursor Vaults: Inner Look", "table" : "VAULT INTERIOR - FIRST LOOK", "repeat" : 2}]
             },       
             "prec_vault_purpose" : {
                 "text" : "Vault Purpose",        
@@ -465,7 +542,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [                    
-                    {"text" : "Precursor Vaults: Vault Purpose", "table" : "PRECURSOR VAULTS: VAULT PURPOSE", "repeat" : 1}]
+                    {"text" : "Vault Interior - Purpose", "table" : "VAULT INTERIOR - PURPOSE", "repeat" : 1}]
             },
             "prec_vault_feature" : {
                 "text" : "Interior Feature",        
@@ -473,7 +550,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Interior Feature", "table" : "PRECURSOR VAULTS: INTERIOR FEATURE", "repeat" : 1}]
+                    {"text" : "Vault Interior - Feature", "table" : "VAULT INTERIOR - FEATURE", "repeat" : 1}]
             },
             "prec_vault_int_peril" : {
                 "text" : "Interior Peril",        
@@ -481,7 +558,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Interior Peril", "table" : "PRECURSOR VAULTS: INTERIOR PERIL", "repeat" : 1}]
+                    {"text" : "Vault Interior - Peril", "table" : "VAULT INTERIOR - PERIL", "repeat" : 1}]
             },
             "prec_vault_int_opp" : {
                 "text" : "Interior Opportunity",        
@@ -489,7 +566,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Interior Opportunity", "table" : "PRECURSOR VAULTS: INTERIOR OPPORTUNITY", "repeat" : 1}]
+                    {"text" : "Vault Interior - Opportunity", "table" : "VAULT INTERIOR - OPPORTUNITY", "repeat" : 1}]
             },
             "prec_vault_sanc_feature" : {
                 "text" : "Sanctum Feature",        
@@ -497,7 +574,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Sanctum Feature", "table" : "PRECURSOR VAULTS: SANCTUM FEATURE", "repeat" : 1}]
+                    {"text" : "Precursor Vaults: Sanctum Feature", "table" : "VAULT SANCTUM - FEATURE", "repeat" : 1}]
             },
             "buttonprec_vault_sanc_peril" : {
                 "text" : "Sanctum Peril",        
@@ -505,7 +582,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Sanctum Peril", "table" : "PRECURSOR VAULTS: SANCTUM PERIL", "repeat" : 1}]
+                    {"text" : "Vault Sanctum - Peril", "table" : "VAULT SANCTUM - PERIL", "repeat" : 1}]
             },
             "prec_vault_sanc_opp" : {
                 "text" : "Sanctum Opportunity",        
@@ -513,7 +590,7 @@
                 "grouped" : false,
                 "grouped_color" : "secondary",
                 "tables" : [
-                    {"text" : "Precursor Vaults: Sanctum Opportunity", "table" : "PRECURSOR VAULTS: SANCTUM OPPORTUNITY", "repeat" : 1}]
+                    {"text" : "Vault Sanctum - Opportunity", "table" : "VAULT SANCTUM - OPPORTUNITY", "repeat" : 1}]
             }
         }
     },
